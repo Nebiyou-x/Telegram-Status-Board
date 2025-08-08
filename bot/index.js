@@ -1,11 +1,11 @@
-// bot/index.js
+
 require("dotenv").config();
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
 
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
-// /start - welcome + open mini app button
+
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     bot.sendMessage(chatId, "👋 Welcome! Tap below to post your status.", {
@@ -20,7 +20,7 @@ bot.onText(/\/start/, (msg) => {
     });
 });
 
-// /latest - fetch last 3 statuses
+
 bot.onText(/\/latest/, async (msg) => {
     const chatId = msg.chat.id;
     try {
