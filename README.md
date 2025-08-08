@@ -29,7 +29,10 @@ cd <your-repo-folder>
 
 ---
 
-Setup the Backend and Populate the env
+Populate the env
+
+
+---
 
 start the backend server
 
